@@ -10,12 +10,12 @@ body {
 }
 
 #intro {
-  background: url("../img/winter-bg.png") no-repeat 0 0;
+  background: url("../img/winter-bg.png") no-repeat 0 center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 768px;
+  height: 555px;
 }
 
 #intro img {
@@ -24,7 +24,7 @@ body {
 
 #intro p {
   margin: 0 auto;
-  padding-top: 190px;
+  padding-top: 30px;
   max-width: 465px;
   font-size: 21px;
   color: rgba(0,0,0,0.72);
