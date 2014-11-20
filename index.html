@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="{{ page.keywords }}">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link href='http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400|Merriweather:400,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body ng-app="myApp" ng-controller="SampleCtrl">
+  <div id="intro">
+    <img src="img/header-graphics.png" />
+    <p>
+      <strong>Winter Break starts in 30 days!</strong>
+       What could be better than spending your vacation hacking on your very own laptop? Fund a $250 Codestarter laptop 
+      <strong>to a kid who is waiting to learn to code</strong>
+       , but who can’t afford their own computer.
+    </p>
+  </div>
+  <div class="divider"> </div>
+  <div id="explanation">
+    <h3>Basically, this is a giant game of tag.</h3>
+    <h2>Here’s how it works:</h2>
+
+    <div class="container">
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h4>Pledge to donate</h4>
+          <p>Pledge now and <strong>we’ll follow up</strong> to finish your donation. Remember, you only have 24 hours from the time you’re tagged!</p>
+        </div>
+
+        <div class="step">
+          <div class="step-num">2</div>
+          <h4>Tag another company</h4>
+          <p>The only way our #30DaysofLaptops works, is if you <strong>challenge another company</strong> to do the same in the next 24 hours.</p>
+        </div>
+
+        <div class="step">
+          <div class="step-num">3</div>
+          <h4>Share the news</h4>
+          <p><strong>Tweet</strong> that your company has made an investment in the #futureoftech and gifted laptops to kid coders this holiday season.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="pledge">
+    <div class="form-wrap">
+      <h2>Pledge now!</h2>
+      <form ng-submit="addPledge(email, company, laptopsPledged)" class="form-inline">
+        <div class="form-group">
+          <label>Your company</label>
+          <input id="company" ng-model="company" class="form-control" required />
+        </div>
+        <div class="form-group">
+          <label>Your email address (we'll keep it private)</label>
+          <input id="email" ng-model="email" class="form-control"  required />
+        </div>
+        <div class="form-group">
+          <label>How many laptops?</label>
+          <input id="laptops" ng-model="laptopsPledged" class="form-control col-md-6" required type="number"/>
+        </div>
+        <button type="submit" class="hidden">Pledge!</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="pledges">
+    <h2 id="total-pledges">{{totalLaptops()}}
+      <span class="subhead">laptops pledged so far!</span>
+    </h2>
+    <ul ng-repeat="(num, pledgeGroup) in groupedPledges()">
+      Date: {{ num }}
+      <li ng-repeat="pledge in pledgeGroup">
+        <span>{{pledge.laptops}} laptops -</span>
+        <span>{{pledge.company}}</span>
+      </li>
+    </ul>
+  </div>
+
+  <div id="background">
+    <div class="divider"> </div>
+
+    <div class="container">
+      <h2>Why do kids need laptops?</h2>
+      <h3>Increasing early access to computers and coding can change lives forever.</h3>
+
+      <p>Here at Codestarter, we believe that everyone deserves the opportunity to learn. We crowdfund $250 laptops for kids that want to learn to code, but can't afford their own computer. Through partnerships with schools in underserved communities and organizations like CoderDojo, we distribute the laptops to kids and help get them started in coding classes. Want to learn more? Check out our website: https://codestarter.org</p>
+    </div>
+
+    <div id="kids"></div>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
+  <script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
+  <script src="https://cdn.firebase.com/libs/angularfire/0.9.0/angularfire.min.js"></script>
+  <script src="js/underscore.min.js"></script>
+  <script src="js/moment.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

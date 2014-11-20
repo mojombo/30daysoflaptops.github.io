@@ -1,0 +1,228 @@
+body {
+  text-align: center;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+#intro {
+  background: url("../img/winter-bg.png") no-repeat 0 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 768px;
+}
+
+#intro img {
+  padding-top: 30px;
+}
+
+#intro p {
+  margin: 0 auto;
+  padding-top: 190px;
+  max-width: 465px;
+  font-size: 21px;
+  color: rgba(0,0,0,0.72);
+  line-height: 28px;
+}
+
+.divider {
+  background: #D0021B;
+  border: 1px solid #979797;
+  height: 16px;
+}
+
+#explanation {
+  padding: 25px 0;
+}
+
+#explanation h3 {
+  font-size: 22px;
+  font-weight: 300;
+  color: #4A4A4A;
+  line-height: 29px;
+  margin-bottom: 12px;
+}
+
+#explanation h2 {
+  font-size: 40px;
+  font-weight: 300;
+  color: #4A4A4A;
+  line-height: 29px;
+  margin-top: 0;
+}
+
+.steps {
+  margin-top: 50px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.step {
+  float: left;
+  width: 32%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+
+.step:first-child {
+  padding-left: 0;
+}
+
+.step:last-child {
+  padding-right: 0;
+}
+
+.step h4 {
+  font-weight: 300;
+  font-size: 26px;
+  color: #000000;
+  line-height: 34px;
+  margin: 15px 0;
+}
+
+.step p {
+  font-weight: 300;
+  font-size: 18px;
+  color: #4A4A4A;
+  line-height: 24px;
+}
+
+.step-num {
+  color: white;
+  background: black;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#pledge {
+  background: #D0021B;
+  padding: 40px;
+}
+
+#pledge h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 40px;
+  color: #FFFFFF;
+  line-height: 53px;
+  margin-top: 0;
+}
+
+.form-wrap {
+  width: 820px;
+  margin: 0 auto;
+}
+
+form {
+  overflow: hidden;
+}
+
+.form-group {
+  float: left;
+  padding-right: 15px;
+}
+
+.form-group input {
+  font-size: 14px;
+  height: 41px;
+  float: left;
+  border-radius: 3px;
+  border: 1px solid #979797;
+  -moz-box-shadow:    inset 0px 1px 3px 0px rgba(0,0,0,0.50);
+  box-shadow:         inset 0px 1px 3px 0px rgba(0,0,0,0.50);
+  padding: 0 6px;
+}
+
+.form-group label {
+  text-align: left;
+  display: block;
+  color: white;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+#email,
+#company {
+  width: 280px;
+}
+
+#laptops {
+  width: 145px;
+}
+
+#total-pledges {
+  font-weight: 900;
+  font-size: 150px;
+  color: #D0021B;
+  margin: 0;
+}
+
+#total-pledges .subhead {
+  display: block;
+  font-weight: 900;
+  font-size: 30px;
+  color: #000000;
+  line-height: 39px;
+  margin-top: -27px;
+}
+
+.hidden {
+  display: none;
+}
+
+#background {
+  padding-bottom: 50px;
+}
+
+#background .divider {
+  height: 66px;
+  margin-bottom: 50px;
+}
+
+#background h2 {
+  font-weight: bold;
+  font-size: 50px;
+  color: #4A4A4A;
+  line-height: 66px;
+  margin: 0;
+}
+
+#background h3 {
+  font-weight: 100;
+  font-size: 26px;
+  color: #979797;
+  line-height: 34px;
+  margin: 5px 0;
+}
+
+#background p {
+  padding: 0 200px;
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #444444;
+  line-height: 33px;
+  margin: 40px 0;
+  text-align: left;
+}
+
+#kids {
+  background: url("../img/kids.jpg") no-repeat 0 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 683px;
+}
